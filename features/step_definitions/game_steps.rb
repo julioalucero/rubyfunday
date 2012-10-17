@@ -1,7 +1,8 @@
 Given /^inicio el juego$/ do
-  pending # express the regexp above with the code you wish you had
+  visit '/play'
 end
 
-Then /^I should see 'A B C'$/ do
-  pending # express the regexp above with the code you wish you had
+Then /^I should see "([^"]*)"$/ do |text|
+  page.should have_content text
 end
+
