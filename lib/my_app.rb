@@ -1,8 +1,8 @@
 require 'sinatra/base'
 
 class MyApp < Sinatra::Base
-  get '/' do
-    'Hello MyApp!'
+  get '/play' do
+    'A B C'
   end
 
   # start the server if ruby file executed directly
